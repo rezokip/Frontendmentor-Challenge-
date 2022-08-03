@@ -1,0 +1,138 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+footer{
+  display: block;
+}
+/*reset*/
+
+*{
+  margin:0;
+  padding:0;
+}
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: poppins;
+  
+}
+
+
+/* size, color, weight*/
+
+h1, 
+h2{
+  color:hsl(234, 12%, 34%);
+
+}
+h1{
+  font-size: 1.6em;
+}
+h1 span{
+  font-weight: 200;
+}
+p{
+  color: hsl(229, 6%, 66%);
+}
+.main-section h2{
+  font-size: 1.25rem;
+}
+.main-section p{
+  font-size: 0.8rem;
+}
+.card--supervisor{
+  border-top: solid 4px hsl(180, 62%, 55%);
+}
+.card--team-builder{
+  border-top: solid 4px hsl(0, 78%, 62%);
+  margin-bottom: 1.5em;
+}
+.card--karma{
+  border-top: solid 4px hsl(34, 97%, 64%);
+}
+.card--calculator{
+  border-top: solid 4px hsl(212, 86%, 64%);
+}
+
+/*layout*/
+
+main{
+  width: clamp(375px, 65%, 1155px);
+  padding: 2em; 
+  
+}
+
+.head-box{
+  text-align: center;
+  margin-bottom: 4.5em;
+  max-width: 513px;
+  margin-right: auto;
+  margin-left: auto;
+ }
+
+.head-box__information{
+  margin-top: 1em;  
+}
+.card{
+  max-width: 350px;
+  max-height: 250px;
+  padding: 1.9em;
+  line-height: 1.6em;
+  border-radius: 0.5em;
+  box-shadow: -2px 2px 20px hsl(229, 6%, 66%);
+}
+h2{
+  margin-bottom: 0.3em;
+}
+.card__image{
+  margin-left: auto;
+  margin-top: 2em;
+  max-width: 4em;
+}
+.card__image img{
+  width: 100%;
+  height: 100%;
+}
+.main-section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  
+}
+.mid-cards-parent{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media (min-width: 800px){
+  main{
+    width: clamp(375px, 100%, 1155px);   
+  }
+  .card--calculator{
+    margin-top: -270px;
+  }
+  h1{
+    font-size: 2.3rem;
+  }
+  .card--team-builder,
+  .card--karma{
+   height: 250px;
+  }
+}
+@media (min-width: 1155px){
+  .card--calculator{
+    margin-top: 135px;
+  }
+  .card--supervisor{
+    margin-top: 135px;
+  }
+}
